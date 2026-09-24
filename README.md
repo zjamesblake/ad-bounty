@@ -7,4 +7,4 @@ Public, **student-facing** site for the Ecom Talent Ad Bounty program.
 
 Kept in its **own repo** (separate from the internal `living-flows` diagrams) so students never share a URL parent with internal process flows.
 
-Source guide also mirrored in the workspace at `ad-bounty/bounty-bot/` docs / `~/Desktop/adbounty-one-pager-v3.md`. When the program changes, update `bounty-info/index.html` here and push.
+This repo is the only source of truth for the guide (`~/Desktop/adbounty-one-pager-v3.md` is the historical 2026-05-19 draft). It is indexed from the workspace at `ad-bounty/CONTEXT.md` → Client-facing artifacts. When the program changes, update `bounty-info/index.html` here, commit, and push — nothing syncs it automatically.

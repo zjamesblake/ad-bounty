@@ -222,11 +222,11 @@
   </ul>
   <h3>Brand QA</h3>
   <p>Checks if your ad respects the brand's specific rules. Every brand has different requirements — claims they can't make, products they can't show a certain way, language they need to avoid. Brand QA catches all of that.</p>
-  <p>We've made Brand QA strict on purpose. If anything's borderline, your ad gets flagged for <strong>manual review</strong> by a human, where someone on our team takes a closer look.</p>
+  <p>We've made Brand QA strict on purpose. If anything's borderline, your ad gets flagged for <strong>manual review</strong>, where a human — the brand's reviewer — takes a closer look.</p>
   <h3>Possible outcomes</h3>
   <p>After QA, one of three things happens:</p>
   <p><strong>Approved.</strong> Your ads passed everything and are queued to launch. You'll get a DM with personalized feedback on what's working and what could be even better.</p>
-  <p><strong>Manual review required.</strong> Something needs a human eye. This isn't necessarily a problem — sometimes the AI just wants a second opinion. A team member will review and either approve it or send you a revision request.</p>
+  <p><strong>Manual review required.</strong> Something needs a human eye. This isn't necessarily a problem — sometimes the AI just wants a second opinion. The brand's reviewer will look at it and either approve it or send you a revision request.</p>
   <p><strong>Revision requested.</strong> Your ad needs changes before it can launch. The DM will include:</p>
   <ul>
     <li>Exactly what failed (Tech QA or Brand QA, with specific reasons)</li>
@@ -240,7 +240,7 @@
   <h2 id="8-launch">8. Launch</h2>
   <p>When your ad is approved, it enters the <strong>launch queue</strong>. The queue is brand-specific because each brand has a daily ad spend capacity, which limits how many new ads we can launch per day.</p>
   <p>Some brands can absorb 20 new batches a day. Some can only absorb 5. We launch in chronological order — no favorites, no jumping the line.</p>
-  <p>When your ad goes live, you'll get a DM letting you know. Your dashboard will start updating with performance data.</p>
+  <p>There's no DM when your ad goes live. Your dashboard is where you'll see it: once the ad is launched and getting spend, it shows up there with performance data.</p>
 
   <h2 id="9-tracking-your-ads">9. Tracking your ads</h2>
   <p>You have two ways to check on your ads:</p>
@@ -258,6 +258,8 @@
       <li><code>/status</code> — your active submissions, stage, time in stage, view links</li>
       <li><code>/all-submissions</code> — full history (capped at 30 most recent), all statuses</li>
       <li><code>/me</code> — your Creator ID, brands you're enrolled in, and brands available to join</li>
+      <li><code>/revisions</code> — every open revision request with the reviewer's comments and the failed gates, grouped by brand (add <code>brand:</code> to narrow it to one brand)</li>
+      <li><code>/payment-info</code> — see and update the payment details we have on file for you</li>
     </ul>
   </div>
   <h3>Performance dashboards</h3>
@@ -289,8 +291,9 @@
   <p>Payouts happen <strong>monthly</strong>. All your earnings across all brands get aggregated into a single payment, so you don't get a million tiny payouts.</p>
   <p>When a payout is processed, you'll get a DM with the full breakdown — which brand, which creative, how much it spent, what your cut was.</p>
   <h3>How payments are sent</h3>
-  <p>If you have a Wise account, payouts are automated. Money lands in your account.</p>
-  <p>If you don't have Wise, payouts go through your local bank, which is slower but still works.</p>
+  <p>Payouts of $10 or more go out through Wise. If you have a Wise account, the money lands there directly with no fee. If you gave us bank details instead, we send it from Wise to your bank — slower, and the bank-transfer fee comes out of your payout.</p>
+  <p>Payouts under $10 are paid through Whop instead of Wise. Anything under $1 for the month isn't paid out.</p>
+  <p>Need to change where you get paid? Run <code>/payment-info</code> in #bounty-bot.</p>
 
   <h2 id="11-milestones-and-rewards">11. Milestones and rewards</h2>
   <p>On top of payouts, there are two milestones that unlock extra rewards:</p>
